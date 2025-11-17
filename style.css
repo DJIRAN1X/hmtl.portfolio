@@ -1,0 +1,203 @@
+.container_1 {
+   
+    height: 100vh;
+    background-image: url("./images/faroe-islands-9939486_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+
+}
+
+h1{
+    color:#001F54;
+    font-family: "Indie Flower", cursive;
+    margin-bottom: 70px;
+    
+}
+
+
+
+h2{
+    color: #001F54;
+    font-family: arial, sans-serif;
+    margin-bottom: 150px;
+    
+}
+
+.img{
+    display: flex ;
+    justify-content: center ;
+    margin-top :50px ;
+
+}
+
+.img img {
+    border-radius: 50%;
+    margin-top: 30px;
+     margin-bottom: 50px;
+    
+}
+
+.container_2{
+   text-align: center ;
+   
+ 
+}
+
+p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    
+}
+
+
+
+
+/* -------- MEDIA QUERY POUR ÉCRANS PETITS -------- */
+@media (max-width: 768px) {
+    .img img {
+        height: 150px;
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .container_2 section {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .img img {
+        height: 120px;
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .container_2 section {
+        margin: 15px 0;
+    }
+}
+
+.container_3 {
+    display: flex;  
+    justify-content: center ; 
+    gap: 300px;               /* espace entre les boxes */
+    margin: 20px 0;
+}
+
+.box_1{
+    height: 300px;
+    width: 300px;
+    background:  #001F54;
+    border-radius: 10px;
+}
+
+.box_2{
+    height: 300px;
+    width: 300px;
+    background: #001F54;
+     border-radius: 10px;
+    
+    
+
+}
+.about{
+    text-align: center;
+}
+
+.footer {
+    background-color: #001F54;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a svg {
+    transition: transform 0.3s, fill 0.3s;
+}
+
+.social-icons a:hover svg {
+    transform: scale(1.2);
+    fill: #FFD700; /* couleur au survol */
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 480px) {
+    .social-icons {
+        gap: 10px;
+    }
+}
+
+
+
+/* -------- MEDIA QUERY TABLETTE -------- */
+@media (max-width: 768px) {
+    .social-icons a svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .social-icons {
+        gap: 12px;
+    }
+}
+
+/* -------- MEDIA QUERY PETITS ÉCRANS -------- */
+@media (max-width: 480px) {
+    .social-icons {
+        flex-wrap: wrap; /* les icônes passent sur 2 lignes si besoin */
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .social-icons a svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* -------- MEDIA QUERY EXTRA PETIT -------- */
+@media (max-width: 360px) {
+    .social-icons a svg {
+        width: 20px;
+        height: 20px;
+    }
+}
